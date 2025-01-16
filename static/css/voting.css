@@ -1,0 +1,176 @@
+/* voting.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(19, 31, 37);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #29dff7;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form {
+    background-color: #ffffff;
+    color: #29dff7;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #0c2326;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5aace4;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+li {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: skyblue;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #5aace4;
+    transform: scale(1.1);
+}
+
+/* Drop-down Styles */
+select {
+    background-color: #ffffff;
+    color: skyblue;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Flash Messages */
+ul {
+    margin-top: 20px;
+}
+
+li {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Results Page Specific */
+.results {
+    background-color: #ffffff;
+    color: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 20px;
+    width: 350px;
+}
+
+.results ul {
+    text-align: left;
+}
+
+.results li {
+    font-size: 1.5rem;
+    color: skyblue;
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    form, .results {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    button, a {
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button, a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
